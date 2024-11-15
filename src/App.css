@@ -36,6 +36,89 @@
   color: #61dafb;
 }
 
+.columns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.attributes {
+  background-color: #e7ffe7;
+}
+
+.classes {
+  background-color: #fff4f4;
+}
+
+.skills {
+  background-color: #e9e6ff;
+}
+
+.skills div{
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding: 1px 0;
+}
+
+.skills p {
+  margin: 0;
+}
+
+.eligible {
+  animation: glow 1.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    color: red;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 15px rgba(255, 0, 0, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 15px rgba(255, 0, 0, 0.6);
+  }
+}
+
+.requirements-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.requirements-popup h3 {
+  margin-top: 0;
+}
+
+.requirements-popup ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.requirements-popup li {
+  margin: 5px 0;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
